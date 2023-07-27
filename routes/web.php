@@ -13,8 +13,6 @@ use App\Http\Controllers\Guest\comics_controller as comics_controller;
 |
 */
 
-//Route::get('/', function () {
-//    return view('home');
-//});
-
-Route::get('/', [comics_controller::class, 'index']);
+Route::get('/', function () {
+    return view('home');
+});
