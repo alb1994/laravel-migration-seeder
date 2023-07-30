@@ -24,6 +24,7 @@ return new class extends Migration
             $table -> time('orario_partenza');
             $table -> boolean('in_orario');
             $table -> boolean('cancelato');
+            $table -> date('data_partenza');
             $table->timestamps();
         });
     }

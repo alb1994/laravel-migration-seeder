@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Guest\comics_controller as comics_controller;
+use App\Http\Controllers\trainscontroller as trainscontroller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,4 @@ use App\Http\Controllers\Guest\comics_controller as comics_controller;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [trainscontroller::class, 'index']);
